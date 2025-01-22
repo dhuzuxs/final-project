@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import AutumnWinterSection from "./pages/AutunmWinterSection";
 import HomePage from "./pages/HomePage";
 
 export default function Home() {
@@ -7,8 +6,6 @@ export default function Home() {
 
     <>
     <Navbar />
-    <HomePage />
-    <AutumnWinterSection />
-    </>
+    <HomePage />    </>
   )
 }

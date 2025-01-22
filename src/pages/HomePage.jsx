@@ -1,16 +1,22 @@
+import FooterSection from "../components/FooterSection";
+import Navbar from "../components/Navbar";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function HomePage() {
+  AOS.init();
   return (
+    <>
+    <Navbar />
     <section className="min-h-screen relative flex items-center">
       <div className="absolute inset-0">
         <img
           src="src/assets/vadimk_77_97007_a_luxury_car_showroom_with_supercars_and_luxu_11764726-2781-45a2-a58b-765080f74604_0.webp"
           alt="Elegant luxury suit displayed in a bright atelier"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
       </div>
-      <div className="relative z-10 max-w-[2000px] mx-auto px-4 sm:px-8 pt-32">
+      <div className="relative z-10 max-w-[2000px] mx-auto px-4 sm:px-8 pt-32" data-aos="fade-right">
         <div className="max-w-4xl">
           <p
             className="text-sm text-white tracking-[0.3em] mb-8 fade-in"
@@ -22,7 +28,7 @@ export default function HomePage() {
             className="text-[12vw] md:text-[7vw] font-light text-white leading-[0.9] mb-8 fade-in"
             style={{ animationDelay: '0.8s' }}
           >
-            QUALITY IS OUR 
+            QUALITY IS OUR
             <br />
             PRIORITY
           </h1>
@@ -46,6 +52,8 @@ export default function HomePage() {
         </div>
       </div>
     </section>
+    <FooterSection />
+    </>
     
 
 )
