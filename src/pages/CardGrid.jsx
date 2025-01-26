@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import FooterSection from "../components/FooterSection";
 import Navbar from "../components/Navbar";
 
@@ -24,7 +25,9 @@ const Card = ({ imageSrc, title, description, price }) => {
           <div className="block mt-4">
             <div className="absolute bottom-2 left-5">
               <button className="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">
+                <Link to="/Product">
                 Add to cart
+                </Link>
               </button>
             </div>
           </div>
@@ -45,17 +48,17 @@ const CardGrid = () => {
     },
     {
       imageSrc:
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/362cced6-125a-4354-a6e0-f56e747ce4d6/AIR+JORDAN+6+RETRO.png",
-      title: "Air Jordan 6 Retro",
-      description: "Men's Shoes",
+      "src/assets/Hilux.jpg",
+      title: "Toyota Hilux 2020",
+      description: "Type G, Automatic",
       price: 200,
     },
     {
       imageSrc:
-        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/77c98012-1e1a-4d57-8a69-162af8874e58/JORDAN+MVP.png",
-      title: "Jumpman MVP",
-      description: "Men's Shoes",
-      price: 165,
+        "src/assets/Fortuner.jpg",
+      title: "Toyota Fortuner VRZ 2022",
+      description: "2.8 GR Sport, Automatic",
+      price: 530,
     },
   ];
 

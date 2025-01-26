@@ -30,9 +30,9 @@ const AutumnWinterSection = () => {
           <div className="space-y-4">
             <p className="text-sm tracking-[0.2em] text-white/60">TENTANG KAMI</p>
             <h2 className="text-4xl text-white sm:text-5xl font-light tracking-wide">
-              AUTUMN /
+              Borobudur 
               <br />
-              WINTER
+              Auto 77
             </h2>
           </div>
           <p className="text-white/70 leading-relaxed text-base sm:text-lg">

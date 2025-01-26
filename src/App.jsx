@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import AutumnWinterSection from "./pages/AutunmWinterSection";
 import Contact from "./pages/Contact";
 import CardGrid from "./pages/CardGrid";
+import ProductPage from "./components/ProductPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/About" element={<AutumnWinterSection />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Stock" element={<CardGrid/>}/>
+        <Route path="/Product" element={<ProductPage/>}/>
       </Routes>
     </BrowserRouter>
   );
