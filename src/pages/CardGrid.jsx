@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import FooterSection from "../components/FooterSection";
 import Navbar from "../components/Navbar";
 
@@ -24,11 +23,14 @@ const Card = ({ imageSrc, title, description, price }) => {
           </div>
           <div className="block mt-4">
             <div className="absolute bottom-2 left-5">
-              <button className="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100">
-                <Link to="/Product">
-                Add to cart
-                </Link>
-              </button>
+              <a 
+                href={`https://wa.me/6285642369177?text=Hello%20I'm%20interested%20in%20the%20${encodeURIComponent(title)}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-red-600 text-gray-100 font-medium py-2.5 px-4 rounded-xl opacity-90 hover:opacity-100"
+              >
+                Buy Now!
+              </a>
             </div>
           </div>
         </div>
@@ -41,14 +43,14 @@ const CardGrid = () => {
   const cards = [
     {
       imageSrc:
-      "src/assets/Innova.jpg",
+        "src/assets/Innova.jpg",
       title: "INNOVA REBORN 2016",
       description: "Type G, Automatic",
       price: 160,
     },
     {
       imageSrc:
-      "src/assets/Hilux.jpg",
+        "src/assets/Hilux.jpg",
       title: "Toyota Hilux 2020",
       description: "Type G, Automatic",
       price: 200,
@@ -64,23 +66,23 @@ const CardGrid = () => {
 
   return (
     <>
-    <Navbar />
-    <div className="bg-black w-screen p-8 sm:p-16 dark:bg-gray-900">
-      <div className="p-4 mb-4 text-lg text-center leading-tight first-letter:capitalize font-medium dark:text-gray-100">
-        <h3>Hover through the cards to see magic</h3>
+      <Navbar />
+      <div className="bg-black w-screen p-8 sm:p-16 dark:bg-gray-900">
+        <div className="p-4 mb-4 text-lg text-center leading-tight first-letter:capitalize font-medium dark:text-gray-100">
+          <h3>Hover through the cards to see magic</h3>
+        </div>
+        <div className="mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              imageSrc={card.imageSrc}
+              title={card.title}
+              description={card.description}
+              price={card.price} />
+          ))}
+        </div>
       </div>
-      <div className="mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
-        {cards.map((card, index) => (
-          <Card
-            key={index}
-            imageSrc={card.imageSrc}
-            title={card.title}
-            description={card.description}
-            price={card.price} />
-        ))}
-      </div>
-    </div>
-    <FooterSection />
+      <FooterSection />
     </>
   );
 };
