@@ -76,7 +76,7 @@ export default function Contact() {
                 Kami akan melayani anda dengan sepenuh hati
               </p>
             </div>
-            <img src="src/assets/foto contact us.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover -z-10" />
+            <img src="assets/foto contact us.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover -z-10" />
           </div>
         </div>
       </section>

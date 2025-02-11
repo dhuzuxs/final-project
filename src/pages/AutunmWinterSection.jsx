@@ -53,11 +53,11 @@ const AutumnWinterSection = () => {
         {/* Right Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <img
-            src="src/assets/car-dashboard-2667434_1280.jpg"
+            src="assets/car-dashboard-2667434_1280.jpg"
             alt="Suit Detail"
             className="w-full aspect-[3/4] object-cover hover:scale-[1.02] transition-transform duration-700" />
           <img
-            src="src/assets/Koenigsegg_Regera_Road_MJ_13939.jpg"
+            src="assets/Koenigsegg_Regera_Road_MJ_13939.jpg"
             alt="Suit Detail"
             className="w-full aspect-[3/4] object-cover sm:mt-20 hover:scale-[1.02] transition-transform duration-700" />
         </div>

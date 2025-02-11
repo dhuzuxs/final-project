@@ -43,21 +43,21 @@ const CardGrid = () => {
   const cards = [
     {
       imageSrc:
-        "src/assets/Innova.jpg",
+        "assets/Innova.jpg",
       title: "INNOVA REBORN 2016",
       description: "Type G, Automatic",
       price: 160,
     },
     {
       imageSrc:
-        "src/assets/Hilux.jpg",
+        "assets/Hilux.jpg",
       title: "Toyota Hilux 2020",
       description: "Type G, Automatic",
       price: 200,
     },
     {
       imageSrc:
-        "src/assets/Fortuner.jpg",
+        "assets/Fortuner.jpg",
       title: "Toyota Fortuner VRZ 2022",
       description: "2.8 GR Sport, Automatic",
       price: 530,
