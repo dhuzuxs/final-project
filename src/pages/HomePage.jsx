@@ -12,7 +12,7 @@ export default function HomePage() {
       <section className="min-h-screen relative flex items-center">
         <div className="absolute inset-0">
           <img
-            src="src/assets/vadimk_77_97007_a_luxury_car_showroom_with_supercars_and_luxu_11764726-2781-45a2-a58b-765080f74604_0.webp"
+            src="assets/vadimk_77_97007_a_luxury_car_showroom_with_supercars_and_luxu_11764726-2781-45a2-a58b-765080f74604_0.webp"
             alt="Elegant luxury suit displayed in a bright atelier"
             className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
@@ -44,8 +44,8 @@ export default function HomePage() {
               Kami selalu mengutamakan kualitas unit dan tentunya dengan harga yang terjangkau
             </p>
             <Link to="/Stock" className="group w-auto px-6 py-3 border text-white border-white hover:bg-white hover:text-black transition-all duration-500 text-xs tracking-[0.2em] flex items-center justify-center gap-3" style={{ animationDelay: '1.8s' }} >
-               VIEW COLLECTION
-               <span className="h-[1px] w-8 bg-current transform transition-transform group-hover:translate-x-2"></span>
+              VIEW COLLECTION
+              <span className="h-[1px] w-8 bg-current transform transition-transform group-hover:translate-x-2"></span>
             </Link>
 
           </div>
