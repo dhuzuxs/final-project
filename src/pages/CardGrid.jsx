@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import FooterSection from "../components/FooterSection";
 import Navbar from "../components/Navbar";
 
@@ -18,7 +19,7 @@ const Card = ({ imageSrc, title, description, price }) => {
               <p className="dark:text-gray-100">{description}</p>
             </div>
             <div>
-              <p className="text-3xl font-bold dark:text-gray-100">${price}</p>
+              <p className="text-3xl font-bold dark:text-gray-100">{price}</p>
             </div>
           </div>
           <div className="block mt-4">
@@ -40,29 +41,14 @@ const Card = ({ imageSrc, title, description, price }) => {
 };
 
 const CardGrid = () => {
-  const cards = [
-    {
-      imageSrc:
-        "assets/Innova.jpg",
-      title: "INNOVA REBORN 2016",
-      description: "Type G, Automatic",
-      price: 160,
-    },
-    {
-      imageSrc:
-        "assets/Hilux.jpg",
-      title: "Toyota Hilux 2020",
-      description: "Type G, Automatic",
-      price: 200,
-    },
-    {
-      imageSrc:
-        "assets/Fortuner.jpg",
-      title: "Toyota Fortuner VRZ 2022",
-      description: "2.8 GR Sport, Automatic",
-      price: 530,
-    },
-  ];
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    fetch("https://script.google.com/macros/s/AKfycbxw6mIZMvoHk852UpoVO9aYl2Nz5eCYSkAUqA31jkSgAqg0XczL-qOzxpoPpGhT4EMolw/exec")
+      .then(response => response.json())
+      .then(data => setCards(data))
+      .catch(error => console.error("Error fetching data:", error));
+  }, []);
 
   return (
     <>
@@ -72,10 +58,10 @@ const CardGrid = () => {
           <h3>Hover through the cards to see magic</h3>
         </div>
         <div className="mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
-          {cards.map((card, index) => (
+          {cards.map((card) => (
             <Card
-              key={index}
-              imageSrc={card.imageSrc}
+              key={card.id}
+              imageSrc={card.image}
               title={card.title}
               description={card.description}
               price={card.price} />
