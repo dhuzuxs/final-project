@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FooterSection from "../components/FooterSection";
 import Navbar from "../components/Navbar";
+import FooterSection from "../components/FooterSection";
 
 const Card = ({ imageSrc, title, description, price }) => {
   return (
@@ -31,12 +32,33 @@ const Card = ({ imageSrc, title, description, price }) => {
 
 const CardGrid = () => {
   const [cards, setCards] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("https://script.google.com/macros/s/AKfycbxw6mIZMvoHk852UpoVO9aYl2Nz5eCYSkAUqA31jkSgAqg0XczL-qOzxpoPpGhT4EMolw/exec")
-      .then(response => response.json())
-      .then(data => setCards(data))
-      .catch(error => console.error("Error fetching data:", error));
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        const formattedData = data.map(item => ({
+          id: item.id,
+          imageSrc: item.image,
+          title: item.title,
+          description: item.description,
+          price: item.price.replace("Rp;", "Rp ")
+        }));
+        setCards(formattedData);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+        setError(error.message);
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -46,11 +68,13 @@ const CardGrid = () => {
         <div className="p-4 mb-6 text-lg text-center font-medium dark:text-gray-100">
           <h3>Hover over the cards to see the effect</h3>
         </div>
+        {loading && <p className="text-center text-gray-600 dark:text-gray-300">Loading...</p>}
+        {error && <p className="text-center text-red-500">Error: {error}</p>}
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card) => (
             <Card
               key={card.id}
-              imageSrc={card.image}
+              imageSrc={card.imageSrc}
               title={card.title}
               description={card.description}
               price={card.price} />
