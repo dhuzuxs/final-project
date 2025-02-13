@@ -10,9 +10,9 @@ const Card = ({ imageSrc, title, description, price }) => {
         alt={title}
       />
       <div className="p-4 bg-gray-800 dark:bg-gray-800">
-        <h2 className="text-xl font-bold text-red-600">{title}</h2>
+        <h2 className="text-xl font-bold text-red-700">{title}</h2>
         <p className="text-gray-600 dark:text-gray-300">{description}</p>
-        <p className="text-2xl font-semibold mt-2 text-gray-900 dark:text-gray-100">{price}</p>
+        <p className="text-2xl font-semibold mt-2 text-gray-200 dark:text-gray-100">{price}</p>
         <div className="mt-4">
           <a 
             href={`https://wa.me/6285642369177?text=Hello%20I'm%20interested%20in%20the%20${encodeURIComponent(title)}`}
