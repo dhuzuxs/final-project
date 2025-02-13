@@ -5,7 +5,7 @@ import FooterSection from "../components/FooterSection";
 
 const Card = ({ imageSrc, title, description, price }) => {
   return (
-    <div className="relative group bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+    <div className="relative group bg-gray-800 shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
       <img
         className="w-full h-60 object-cover"
         src={imageSrc}
@@ -64,7 +64,7 @@ const CardGrid = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 dark:bg-gray-900 min-h-screen p-8 sm:p-16">
+      <div className="bg-black dark:bg-gray-900 min-h-screen p-8 sm:p-16">
         <div className="p-4 mb-6 text-lg text-center font-medium dark:text-gray-100">
           <h3>Hover over the cards to see the effect</h3>
         </div>
