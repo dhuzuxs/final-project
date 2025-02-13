@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import FooterSection from "../components/FooterSection";
 import Navbar from "../components/Navbar";
-import FooterSection from "../components/FooterSection";
-
 const Card = ({ imageSrc, title, description, price }) => {
   return (
     <div className="relative group bg-gray-800 shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
