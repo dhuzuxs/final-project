@@ -46,7 +46,7 @@ const AutumnWinterSection = () => {
           <Link to="/Stock" className="group w-full sm:w-auto px-8 sm:px-12 py-4 border text-white border-white hover:bg-white hover:text-black transition-all duration-500 text-xs tracking-[0.2em] fade-in flex items-center justify-center sm:justify-start gap-4"
             style={{ animationDelay: '1.8s' }} >
            
-            VIEW COLLECTION
+            VIEW STOCK
             <span className="h-[1px] w-8 bg-current transform transition-transform group-hover:translate-x-2"></span>
           </Link>
         </div>
