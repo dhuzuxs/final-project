@@ -59,14 +59,14 @@ export default function FooterSection() {
           <div className="flex">
             <p className="mr-1 text-white">Address:</p>
             <a
-              href="https://maps.app.goo.gl/B6o6zEha3NJUaQCr6"
+              href="https://maps.app.goo.gl/3bkB59CdsmL2G4HB7"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Our address"
               title="Our address"
               className="transition-colors duration-300 text-white hover:text-deep-purple-800"
             >
-              Jl. Semarang - Yogyakarta No.23, Tidar Sel., Kec. Magelang Sel., Kota Magelang, Jawa Tengah 56125
+              Ngrajek II, Ngrajek, Mungkid, Magelang Regency, Central Java
             </a>
           </div>
         </div>
