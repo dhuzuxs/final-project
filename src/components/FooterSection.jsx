@@ -25,10 +25,10 @@ export default function FooterSection() {
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-white">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            Membeli mobil bekas seharusnya tetap memberikan rasa aman. Karena itu, kami hanya menawarkan mobil dengan jarak tempuh rendah dan kondisi yang masih sangat baik. Setiap unit telah melalui proses inspeksi menyeluruh agar Anda bisa mendapatkan kendaraan yang siap pakai tanpa khawatir.
             </p>
             <p className="mt-4 text-sm text-white">
-              Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Kami percaya, mobil bekas yang berkualitas tinggi dapat menjadi pilihan cerdas. Dengan riwayat servis yang jelas dan performa mesin yang terjaga, mobil pilihan kami siap menemani perjalanan Anda dengan nyaman dan percaya diri.
             </p>
           </div>
         </div>
@@ -71,31 +71,30 @@ export default function FooterSection() {
           </div>
         </div>
         <div>
-          <span className="text-base font-bold tracking-wide text-white">Social</span>
-          <div className="flex items-center mt-1 space-x-3">
-            <a href="/" className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                <path
-                  d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                ></path>
-              </svg>
-            </a>
-            <a href="/" className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
-              <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
-                <circle cx="15" cy="15" r="4"></circle>
-                <path
-                  d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
-                ></path>
-              </svg>
-            </a>
-            <a href="/" className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                <path
-                  d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                ></path>
-              </svg>
-            </a>
-          </div>
+        <span className="text-base font-bold tracking-wide text-white">Social</span>
+<div className="flex items-center mt-1 space-x-3">
+  {/* Instagram */}
+  <a href="/" className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.5.5.2.9.5 1.3 1 .4.4.7.8 1 1.3.2.4.4 1 .5 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.9-1 1.3-.4.4-.8.7-1.3 1-.4.2-1 .4-2.2.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.5a3.5 3.5 0 0 1-1.3-1c-.4-.4-.7-.8-1-1.3-.2-.4-.4-1-.5-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.3-1.8.5-2.2.2-.5.5-.9 1-1.3.4-.4.8-.7 1.3-1 .4-.2 1-.4 2.2-.5 1.2-.1 1.6-.1 4.8-.1zm0-2.2c-3.3 0-3.7 0-5 .1-1.3.1-2.2.3-3 .7a5.7 5.7 0 0 0-2.1 1.4 5.7 5.7 0 0 0-1.4 2.1c-.4.8-.6 1.7-.7 3C.2 8.3.2 8.7.2 12s0 3.7.1 5c.1 1.3.3 2.2.7 3 .4.8.9 1.5 1.4 2.1a5.7 5.7 0 0 0 2.1 1.4c.8.4 1.7.6 3 .7 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.3 3-.7a5.7 5.7 0 0 0 2.1-1.4 5.7 5.7 0 0 0 1.4-2.1c.4-.8.6-1.7.7-3 .1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.2-.7-3a5.7 5.7 0 0 0-1.4-2.1 5.7 5.7 0 0 0-2.1-1.4c-.8-.4-1.7-.6-3-.7-1.3-.1-1.7-.1-5-.1zM12 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.8a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+    </svg>
+  </a>
+
+  {/* TikTok */}
+  <a href="/" className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M12.2 2c.5 0 1 .4 1 1v2.2c0 .6.4 1.1 1 1.2 1.2.3 2.5.3 3.6 0V9c-1.1-.2-2.2-.6-3.2-1.1v6.5c0 2.6-2.2 4.8-4.8 4.8s-4.8-2.2-4.8-4.8S7.2 9.6 9.8 9.6c.2 0 .5 0 .7.1v2.6c-.2 0-.4-.1-.6-.1-1.2 0-2.2 1-2.2 2.2S8.7 16.6 9.9 16.6s2.2-1 2.2-2.2V2.9c0-.5.4-.9.9-.9h.2z"/>
+    </svg>
+  </a>
+
+  {/* Facebook */}
+  <a href="/" className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.3C0 23.4.6 24 1.3 24H12v-9.3H9.3V11h2.7V8.3c0-2.7 1.6-4.2 4.1-4.2 1.2 0 2.4.2 2.4.2v2.6h-1.4c-1.4 0-1.9.9-1.9 1.8V11H19l-.4 3.7h-2.6V24h6.7c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z"/>
+    </svg>
+  </a>
+</div>
+
           <p className="mt-4 text-sm text-white">
             Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
           </p>
